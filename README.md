@@ -6,9 +6,6 @@
 This tutorial outlines the lifecycle of a ticket from intake to resolution within the open-source help desk ticketing system osTicket.<br />
 
 
-<h2>Video Demonstration</h2>
-
-- ### [YouTube: How to create, work, and resolves tickets within osTicket](https://www.youtube.com)
 
 <h2>Environments and Technologies Used</h2>
 
@@ -30,25 +27,83 @@ This tutorial outlines the lifecycle of a ticket from intake to resolution withi
 <h2>Lifecycle Stages</h2>
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Go to your web browser and go to the <a href="http://localhost/osTicket/">osTicket end user page</a>,
+   Select "Open a New Ticket"</p>
+ <p> <img src="https://user-images.githubusercontent.com/142059616/263896542-12001e05-80d8-4fff-a420-d99dceed1979.png"/></p>
+ Enter <ul><li>An Email Address <li>Your Name<li> A Help Topic<li>An Issue Summanry<li>Issue Details
+ </li></ul>
+   <img src="https://i.imgur.com/40QD7AI.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+=Here's some more examples: 
+<p align=center>
+<img src="https://i.imgur.com/gsYwMkX.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/Uh85P3N.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
+<hr>
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
+<h3>Assignment and Communication</h3>
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+_Tickets have been made! We'll now go into the Agent's perspective of their end:_
+- On the web browser (Microsoft Edge), go to the Help Desk Login Page (http://localhost/osTicket/scp/login.php).
+  - Log into the osTicket Help Desk using an Agent account (this example uses username **jane.doe / jane.doe@osticket.com**).
+  - Once logged in, you should see the created tickets from the clients.
+- Click on any available ticket (this example selects **entire mobile online banking is down**).
+<p align=center>
+<img src="https://i.imgur.com/IlBoq7U.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+
+_As an Agent, we'll observe and configure information of this ticket._
+
+_Having the entire mobile online banking down is something that could have a major impact on the company, resulting in losing money. The severity on this should be higher and should be assigned to the departments/teams that can be responsible to resolve this issue ASAP!_
+- Set Priorty from Normal to a higher level (this example uses **Emergency**).
+- Assign to a higher-tier department (this example uses **System Administrators**).
+- Assign a specific person(s) the responsbility to manage this ticket (this example uses the current user, **Jane Doe**).
+- Modify the SLA Plan from Normal to a higher level (this example uses **SEV-A**).
+<p align=center>
+<img src="https://i.imgur.com/V8WJ5GJ.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/JR8XMOt.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/CvAfVuZ.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/Wk23cCI.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/QIbVd0K.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
-<br />
+<hr>
+
+<h3>&#9314; Working the Issue</h3>
+
+_Observing the overview page, we can see every update happening within the Ticket Thread. As an Agent, we can communicate under Post Reply to bring status updates to anyone viewing this ticket or for conversational purposes regarding the issue at-hand._
+<p align=center>
+<img src="https://i.imgur.com/qtVIjs7.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+
+- Under Post Reply, type in a random message.
+- Keep the Ticket Status to "Open (current)", assuming the issues isn't resolved.
+- Click "Post Reply".
+<p align=center>
+<img src="https://i.imgur.com/P5tLSZ5.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/YvCnXJe.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+
+_Like a virtual chat or messaging system, your message will be sent and posted on the thread. The thread will constantly be updated with conversations back and forth, or status changes while working on the issue at-hand._
+<hr>
+
+<h3>&#9315; Resolution</h3>
+
+_Let's say the issue has finally been resolved:_
+- Under Post Reply, type in a random message stating a final update of the matter.
+- Change the Ticket Status to "Resolved".
+<p align=center>
+<img src="https://i.imgur.com/e1Ac4aR.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/vkOXsXv.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+
+_Once a ticket is resolved, it is considered "closed", so it will disappear from the Open Tickets page._<br>
+
+<p align=center>
+<img src="https://i.imgur.com/xw9gHmX.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+
+- Continue to go through the rest of the remaining tickets and use best judgement on their Priorty, assignment to departments and teams, etc.
+<p align=center>
+<img src="https://i.imgur.com/N68R5Y9.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<hr>
+<h1>ALL DONE GREAT WORK 🤩</h1>
